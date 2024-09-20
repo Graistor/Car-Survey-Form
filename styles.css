@@ -1,0 +1,130 @@
+:root {
+   /*Fonts*/
+   --title-font:"Protest Guerrilla", sans-serif;
+   --text-font: "Kanit", sans-serif;
+
+   /*Colors*/
+   --main-color: rgb(2, 62, 138);
+   --text-color: #f1faee;
+   --input-color: #141233;
+}
+
+html {
+   box-sizing: border-box;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+ 
+body {
+   margin: 0;
+   width: 100%;
+   height: 100vh;
+   background-image: url("images/porsce.jpg");
+   background-size: cover;
+}
+
+header {
+   text-align: center;
+}
+
+#title {
+   font-size: 4rem;
+   font-family: var(--title-font);
+   margin-bottom: 0;
+   margin-top: 1.25rem;
+   -webkit-box-shadow: 0px 1px 49px 0px rgba(241,250,238,1);
+-moz-box-shadow: 0px 1px 49px 0px rgba(241,250,238,1);
+box-shadow: 0px 1px 49px 0px rgba(241,250,238,1);
+}
+
+p {
+   font-size: 2rem;
+   margin-top: 0.5rem;
+}
+
+h1, p {
+   color: var(--text-color);
+   
+}
+
+form {
+   max-width: 700px;
+   min-width: 500px;
+   margin: 0 auto;
+   background-color: rgba(2, 62, 138, 0.6);
+   padding: 2rem;
+   border-radius: 30px;
+   -webkit-box-shadow: 0px 1px 49px 0px rgba(241,250,238,1);
+-moz-box-shadow: 0px 1px 49px 0px rgba(241,250,238,1);
+box-shadow: 0px 1px 49px 0px rgba(241,250,238,1);
+}
+
+fieldset {
+   border: none;
+}
+
+input, label {
+   display: block;
+   color: var(--text-color);
+   font-family: var(--text-font);
+}
+
+.user-info input{
+   margin: 0.2rem 0 1rem 0;
+   width: 100%;
+   color: var(--input-color);
+   padding: 0.5em;
+   border: none;
+   border-radius: 7px;
+   font-size: 1rem;
+}
+
+.user-info label {
+   display: inline;
+}
+
+.user-options select {
+   width: 100% ;
+   margin: 0.2rem 0 1rem 0;
+   padding: 0.5rem;
+   font-size: 1rem;
+   font-family: var(--text-font);
+   border-radius: 7px;
+}
+
+label {
+   font-size: 1.5rem;
+}
+
+.user-options label, input {
+   display: inline-block;
+}
+
+.user-options input {
+   margin: 0 10px 0 0;
+}
+
+.user-features label, input {
+   display: inline-block;
+   margin: 0.2rem 0;
+}
+
+#submit {
+   width: 100%;
+   padding: 1rem 0;
+   border: none;
+   border-radius: 7px;
+   font-size: 1.5rem;
+   font-family: var(--text-font);
+   background-color: #80b918;
+   color: var(--text-color);
+   margin: 1.5rem 0;
+   cursor: pointer;
+}
+
+textarea {
+   width: 100%;
+   height: 9rem;
+   margin-top: 1rem;
+}
